@@ -150,7 +150,6 @@ body {
 
 .content_list {
   margin-top: 6px;
-  line-height: 1.67;
   margin-bottom: 5px;
 }
 
@@ -160,6 +159,9 @@ body {
   background-position: 0 center;
   padding-left: 13px;
   margin-bottom: 12px;
+  /* line-height: 1.67; - old value */
+  /* индивидуальная высота строки 11 + 20 = 31*/
+  line-height: 31px;
 }
 
 .content_list li:last-child {
@@ -170,6 +172,7 @@ body {
   position: absolute;
   top: 216px;
   right: 40px;
+  z-index: 1000;
 }
 
 /* FOOTER */
