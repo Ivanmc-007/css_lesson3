@@ -1,0 +1,111 @@
+body {
+  background-image: url("../../../images/bg.jpg");
+  /* Запрещаем картинке повторяться сеткой */
+  background-repeat: no-repeat;
+  /* Центрируем фон по горизонтали и вертикали */
+  background-position: center center;
+  /* Фиксируем фон */
+  background-attachment: fixed;
+  /* Растягиваем картинку на весь экран с сохранением пропорций */
+  background-size: cover;
+}
+
+.main_wrapper {
+  margin: 0 auto;
+  max-width: 950px;
+  font-family: sans-serif;
+}
+
+.header {
+  background-image: url("../../../images/top_bg.jpg");
+  background-size: cover;
+}
+
+.header_logo {
+  margin-top: 17px;
+  margin-bottom: 30px;
+  width: 295px;
+  height: 61px;
+  float: left;
+  position: relative;
+}
+
+.header_logo img {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+
+.header_content {
+  float: left;
+  width: 426px;
+  border-width: 1px;
+  border-color: #000;
+  border-right-style: dotted;
+  border-left-style: dotted;
+  padding: 0 140px 0 10px;
+  margin-top: 16px;
+  margin-bottom: 29px;
+  position: relative;
+  font-size: 11px;
+  line-height: 1.335;
+}
+
+.header_content img {
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  /* рамка */
+  border: 1px solid #df4ab7;
+  padding: 4px;
+  background-color: transparent;
+  /* увеличиваем картинку по макету */
+  width: 120px;
+  height: 80px;
+}
+
+.header_title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2b82c9;
+  margin-bottom: 5px;
+}
+
+.header_content em {
+  font-style: italic;
+}
+
+.header_content > div {
+  font-weight: bold;
+}
+
+.header_nav {
+  background-image: url("../../../images/center_bg.gif");
+  /* начать элемент с новой строки */
+  clear: both;
+  /* Задаем высоту строки, равную высоте фоновой картинки меню */
+  line-height: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 30px;
+}
+
+.header_nav a {
+  padding-left: 17px;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header_nav a:first-child {
+  padding-left: 0;
+}
+
+.header_nav a:hover {
+  color: #2b82c9;
+}
