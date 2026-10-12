@@ -3,14 +3,13 @@ body {
   /* Запрещаем картинке повторяться сеткой */
   background-repeat: no-repeat;
   /* Центрируем фон по горизонтали и вертикали */
-  background-position: center center;
+  background-position: top center;
   /* Фиксируем фон */
   background-attachment: fixed;
-  /* Растягиваем картинку на весь экран с сохранением пропорций */
-  background-size: cover;
+  background-color: #b8b6bb;
 }
 
-.main_wrapper {
+#main_block {
   margin: 0 auto;
   max-width: 950px;
   font-family: sans-serif;
@@ -148,27 +147,24 @@ body {
   margin-bottom: 5px;
 }
 
-.content_list {
+.spisok {
+  list-style-image: url("../../../images/list_arrow.gif");
   margin-top: 6px;
   margin-bottom: 5px;
+  padding-left: 12px;
 }
 
-.content_list li {
-  background-image: url("../../../images/list_arrow.gif");
-  background-repeat: no-repeat;
-  background-position: 0 center;
-  padding-left: 13px;
+.spisok li {
   margin-bottom: 12px;
-  /* line-height: 1.67; - old value */
   /* индивидуальная высота строки 11 + 20 = 31*/
   line-height: 31px;
 }
 
-.content_list li:last-child {
+.spisok li:last-child {
   margin-bottom: 0;
 }
 
-.content_image {
+#me {
   position: absolute;
   top: 216px;
   right: 40px;
